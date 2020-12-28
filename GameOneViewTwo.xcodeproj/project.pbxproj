@@ -19,13 +19,14 @@
 		CC229C4B25959DAB00CA5BD7 /* Tree18View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229C4625959DAB00CA5BD7 /* Tree18View.swift */; };
 		CC229C4C25959DAB00CA5BD7 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229C4725959DAB00CA5BD7 /* TreeView.swift */; };
 		CC229C4D25959DAB00CA5BD7 /* ColorTube-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC229C4825959DAB00CA5BD7 /* ColorTube-Regular.ttf */; };
-		CC229C692595BB3100CA5BD7 /* OblackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229C662595BB3100CA5BD7 /* OblackView.swift */; };
 		CC229CC82596573C00CA5BD7 /* Rine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CC72596573C00CA5BD7 /* Rine.swift */; };
 		CC229CD12596F36C00CA5BD7 /* ArtboardBk3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CCF2596F36C00CA5BD7 /* ArtboardBk3View.swift */; };
 		CC229CD22596F36C00CA5BD7 /* Timeline_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CD02596F36C00CA5BD7 /* Timeline_1.swift */; };
 		CC229CD725971D0300CA5BD7 /* DeadNewVerstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CD625971D0300CA5BD7 /* DeadNewVerstion.swift */; };
 		CC229CDE259725FC00CA5BD7 /* ArdaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CDC259725FC00CA5BD7 /* ArdaScene.swift */; };
 		CC229CDF259725FC00CA5BD7 /* Arda.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229CDD259725FC00CA5BD7 /* Arda.swift */; };
+		CC229D492598C7E600CA5BD7 /* OblackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229D482598C7E600CA5BD7 /* OblackView.swift */; };
+		CC229D512598F8A700CA5BD7 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC229D502598F8A700CA5BD7 /* BackView.swift */; };
 		CC40676A253BF4E200C57373 /* ProbaSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC406769253BF4E200C57373 /* ProbaSetting.swift */; };
 		CC44E4E8253D36CF00A2A03A /* DataSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44E4E7253D36CF00A2A03A /* DataSetting.swift */; };
 		CC45822E254B478D0003989F /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45822D254B478D0003989F /* Animation.swift */; };
@@ -103,13 +104,14 @@
 		CC229C4625959DAB00CA5BD7 /* Tree18View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree18View.swift; sourceTree = "<group>"; };
 		CC229C4725959DAB00CA5BD7 /* TreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 		CC229C4825959DAB00CA5BD7 /* ColorTube-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ColorTube-Regular.ttf"; sourceTree = "<group>"; };
-		CC229C662595BB3100CA5BD7 /* OblackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OblackView.swift; path = "../../../../../../ProbaOblack 2/ProbaOblack/Model/OblackView.swift"; sourceTree = "<group>"; };
 		CC229CC72596573C00CA5BD7 /* Rine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rine.swift; sourceTree = "<group>"; };
 		CC229CCF2596F36C00CA5BD7 /* ArtboardBk3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtboardBk3View.swift; path = "../../../../../../../Image Nature/1700/Ok3/ArtboardBk3View.swift"; sourceTree = "<group>"; };
 		CC229CD02596F36C00CA5BD7 /* Timeline_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline_1.swift; path = "../../../../../../../Image Nature/1700/Ok3/Timeline_1.swift"; sourceTree = "<group>"; };
 		CC229CD625971D0300CA5BD7 /* DeadNewVerstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadNewVerstion.swift; sourceTree = "<group>"; };
 		CC229CDC259725FC00CA5BD7 /* ArdaScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArdaScene.swift; sourceTree = "<group>"; };
 		CC229CDD259725FC00CA5BD7 /* Arda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arda.swift; sourceTree = "<group>"; };
+		CC229D482598C7E600CA5BD7 /* OblackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OblackView.swift; sourceTree = "<group>"; };
+		CC229D502598F8A700CA5BD7 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		CC406769253BF4E200C57373 /* ProbaSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbaSetting.swift; sourceTree = "<group>"; };
 		CC44E4E7253D36CF00A2A03A /* DataSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetting.swift; sourceTree = "<group>"; };
 		CC45822D254B478D0003989F /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
@@ -250,7 +252,7 @@
 				CC229CCF2596F36C00CA5BD7 /* ArtboardBk3View.swift */,
 				CC229CD02596F36C00CA5BD7 /* Timeline_1.swift */,
 				CC229CC72596573C00CA5BD7 /* Rine.swift */,
-				CC229C662595BB3100CA5BD7 /* OblackView.swift */,
+				CC229D482598C7E600CA5BD7 /* OblackView.swift */,
 			);
 			path = Oblack;
 			sourceTree = "<group>";
@@ -260,6 +262,7 @@
 			children = (
 				CC229CDD259725FC00CA5BD7 /* Arda.swift */,
 				CC229CDC259725FC00CA5BD7 /* ArdaScene.swift */,
+				CC229D502598F8A700CA5BD7 /* BackView.swift */,
 			);
 			path = Enemy;
 			sourceTree = "<group>";
@@ -557,7 +560,6 @@
 			files = (
 				CC229C4025959D8F00CA5BD7 /* TreeScene.swift in Sources */,
 				CC45823D254B47B40003989F /* CATransaction+Extension.swift in Sources */,
-				CC229C692595BB3100CA5BD7 /* OblackView.swift in Sources */,
 				CCBA0C0F2564A33B002D31E0 /* ShowPurchases.swift in Sources */,
 				CC458242254B47C00003989F /* CGPath+SVG.swift in Sources */,
 				CC458251254B47E50003989F /* ShapeView.swift in Sources */,
@@ -578,6 +580,8 @@
 				CC229CDE259725FC00CA5BD7 /* ArdaScene.swift in Sources */,
 				CC9BCD3E2523A4F5007FC885 /* Alo+CoreDataProperties.swift in Sources */,
 				CC229CD12596F36C00CA5BD7 /* ArtboardBk3View.swift in Sources */,
+				CC229D512598F8A700CA5BD7 /* BackView.swift in Sources */,
+				CC229D492598C7E600CA5BD7 /* OblackView.swift in Sources */,
 				CC458260254B480B0003989F /* Timeline.swift in Sources */,
 				CC9BCD152523A338007FC885 /* GameOneViewTwo.xcdatamodeld in Sources */,
 				CC458265254B48170003989F /* UIImage+Extension.swift in Sources */,

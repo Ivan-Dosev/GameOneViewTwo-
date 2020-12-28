@@ -38,7 +38,8 @@ public class Tree18View: UIView {
         clipsToBounds = false
         createViews()
         addSubviews()
-        //scale(to: frame.size)
+//        scale(to: frame.size)
+
     }
 
     /// Scales `self` and its subviews to `size`.
@@ -53,6 +54,7 @@ public class Tree18View: UIView {
     /// If there are any constraints in IB affecting the frame of `self`, this method will have consequences on
     /// layout / rendering. To properly scale an animation, you will have to position the view manually.
     public func scale(to size: CGSize) {
+
         let x = size.width / Defaults.size.width
         let y = size.height / Defaults.size.height
         transform = CGAffineTransform(scaleX: x, y: y)
@@ -60,18 +62,19 @@ public class Tree18View: UIView {
 
     private func createViews() {
         CATransaction.suppressAnimations {
-            create_18d()
+            create_18d(frameTree: resizeTree(number: number))
         }
     }
 
-    private func create_18d() {
-        _18d = UIImageView(frame: CGRect(x: 240, y: 450, width: 110, height: 250))
+    private func create_18d(frameTree:  CGFloat) {
+        
+        _18d = UIImageView(frame: CGRect(x: 240.5, y: 450, width: frameTree, height: 250))
         _18d.layer.anchorPoint = CGPoint(x: 0.5, y: 1)
         _18d.layer.shadowOffset = CGSize(width: 0, height: 0)
         _18d.layer.shadowColor = UIColor.clear.cgColor
         _18d.layer.shadowOpacity = 1
         _18d.layer.position = CGPoint(x: 240, y: 400)
-        _18d.layer.bounds = CGRect(x: 0, y: 0, width: 110, height: 250)
+        _18d.layer.bounds = CGRect(x: 0, y: 0, width: frameTree, height: 250)
         _18d.layer.masksToBounds = false
         _18d.image = #imageLiteral(resourceName: "tree\(number)")
         _18d.layer.contentsGravity = .resize
@@ -80,4 +83,48 @@ public class Tree18View: UIView {
     private func addSubviews() {
         addSubview(_18d)
     }
+    
+    func resizeTree(number: Int) -> CGFloat {
+        switch number {
+        case 0:
+            return  124
+        case 1:
+            return  159
+        case 2:
+            return  237
+        case 3:
+            return  174
+        case 4:
+            return  130
+        case 5:
+            return  183
+        case 6:
+            return  191
+        case 7:
+            return  144
+        case 8:
+            return  237
+        case 9:
+            return  138
+        case 10:
+            return  186
+        case 11:
+            return  211
+        case 12:
+            return  194
+        case 13:
+            return  90
+        case 14:
+            return  204
+        case 15:
+            return  161
+        case 16:
+            return  110
+        default:
+            return  110
+        }
+    }
+    
+    
 }
+//  CGRect(x: 240, y: 450, width: 104, height: 250)

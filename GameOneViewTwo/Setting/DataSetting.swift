@@ -147,7 +147,13 @@ struct DataSetting: View {
 
                 if num == index {
                     gameLock[num].isOnOffG = true
+                    gameLock[num].timeDateG = Date()
+
                     UserDefaults.standard.set(num, forKey: "Arda")
+                    UserDefaults.standard.set(false, forKey: "TreeDead")
+                    UserDefaults.standard.set(false, forKey: "Polivane")
+                    UserDefaults.standard.set(false, forKey: "ViewEnemy")
+                    UserDefaults.standard.set(true, forKey: "ShowEnemy")
                 }else{
                     gameLock[num].isOnOffG = false
                 }

@@ -25,7 +25,10 @@ class MagicScene: SKScene {
         let  background = SKSpriteNode(imageNamed: "Treva")
              background.position = CGPoint(x: 150, y: 150)
              addChild(background)
-        loadScene()
+        if UserDefaults.standard.bool(forKey: "ViewEnemy") {
+            loadScene()
+        }
+      
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         logo.removeAllActions()

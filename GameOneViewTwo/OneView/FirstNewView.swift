@@ -71,9 +71,15 @@ struct FirstNewView: View {
                         Text("Polivane")
                             .frame(width: width / 4  , height: width / 6)
                             .modifier(PrimaryButton())
+//                            .onTapGesture {
+//                                self.isTretirane = false
+////                                UserDefaults.standard.bool(forKey: "ShowEnemy")
+//                                  UserDefaults.standard.set(true, forKey: "ShowEnemy")
+//                            }
                             .offset(y: self.width < 700 ? 40 : 40)
                     }else {
                         Button(action: {
+                            UserDefaults.standard.set(false, forKey: "ViewEnemy")
                             self.isPolivane = true
                                                         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                                                             self.isPolivane = false
@@ -81,12 +87,12 @@ struct FirstNewView: View {
                         }) {
                             Text("Polivane")
                                 .frame(width: width / 4  , height: width / 6)
+                                .scaleEffect(UserDefaults.standard.bool(forKey: "Polivane") ? 1.5 : 1)
                                 .modifier(PrimaryButton())
                                 .offset(y: self.width < 700 ? 40 : 40)
                         }
                     }
-
-
+                    
                  Spacer()
                     VStack(spacing: 20){
                         Text("TOTALL")
@@ -100,6 +106,9 @@ struct FirstNewView: View {
                     Spacer()
                     ButtonView(width: width / 4  , height: width / 6  ,isPressed: self.$isTretirane, name: "Tretirane")
                    .offset(y: self.width < 700 ? 40 : 40)
+                        .onTapGesture {
+                            self.isTretirane = true
+                        }
                     Spacer()
                 }
                 .frame(width: width, height: 100, alignment: .center)
@@ -140,35 +149,36 @@ struct FirstNewView: View {
 
                 
             } .frame(width: self.width  , height: self.height )
+            
+            
             ZStack {
-             
-                if self.isTretirane {
-//                    TreeDeadView()
-                      DeadNewViewTree()
-                }else{
-                    loadNewView()
-                }
-              
-         
- 
 
+
+                if UserDefaults.standard.bool(forKey: "TreeDead") {
+                          DeadNewViewTree()
+                }else{
+                    if UserDefaults.standard.bool(forKey: "ShowEnemy") {
+                           loadNewView()
+                    }else{
+                           BackView()
+                    }
+                }
             }
+            
+            
         }
         .onAppear(){
-            
-                isTretirane.toggle()
-       
           
             if gameLock.count == 0 {
-
+                UserDefaults.standard.set(false, forKey: "TreeDead")
+                UserDefaults.standard.set(true, forKey: "ShowEnemy")
+                UserDefaults.standard.set(false, forKey: "Polivane")
+                UserDefaults.standard.set(true, forKey: "ViewEnemy")
                 print("\(gameLock.count)...ok")
                 loadData()
-            }else{
-                print("core data loaded \(gameLock[loadIndexFromCoreData()].totallG)")
-              
-            }
 
-        }
+              }
+            }
        
     }
     
@@ -240,8 +250,7 @@ struct FirstNewView: View {
     
     func loadData(){
         
-    
-        for num in 0..<chose.choseBranchNew.count {
+     for num in 0..<chose.choseBranchNew.count {
             
             let loaddata = GameLock(context: moc)
             
@@ -252,7 +261,7 @@ struct FirstNewView: View {
             loaddata.imageG     =  chose.choseBranchNew[num].image
             loaddata.totallG    =  Float(chose.choseBranchNew[num].totall)
             loaddata.reklamaG   =  chose.choseBranchNew[num].reklama
-            loaddata.timeDateG  =  chose.choseBranchNew[num].timeDate
+            loaddata.timeDateG  =  Date()
             
             
             do {
